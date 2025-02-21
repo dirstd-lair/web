@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon/logo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>ATOM | Чат-боты</title>
+</head>
+<body>
+    <div class="menu-panel">
+        <a href="">Главная</a> 
+        <a href="">О нас</a> 
+        <a href="">Продукты</a> 
+        <a href="">Отзывы</a> 
+        <a href="">Вопросы</a> 
+        <a href="">Контакты</a> 
+        <a href="">Соц-сети</a>            
+    </div>
+    <header class="main-header">
+        <a href="" class="tit">ATOM</a>
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu').click(function() {
+                console.log(1);
+                $(this).toggleClass('open');
+                $('.menu-panel').toggleClass('open')
+                $('.tit').toggleClass('open')
+            });
+        });
+    </script>
+</body>
+</html>
