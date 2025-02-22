@@ -1,0 +1,29 @@
+@media screen and (min-width: 1024px) {
+    .menu {
+        visibility: hidden;
+    }
+
+    .main-header {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        visibility: visible;
+        overflow: hidden;
+    } 
+
+    .nav-menu {
+        display: none;  
+    }
+
+    .bth {
+        padding: 8px 25px;
+        border: none;
+    }
+
+    .bth:hover {
+        background: none;
+    }
+}
