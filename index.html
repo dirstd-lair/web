@@ -41,7 +41,6 @@
         </div>
         </div>
     </div>
-    <div class="block-header"></div>
     <header class="main-header">
         <a href="" class="tit">ATOM</a>
         <div class="menu">
@@ -70,40 +69,19 @@
             <a href="" class="bth">Sigh in</a>
         </nav>
     </header>
-    <div class="content">
-        <h1>Testing Animation</h1>
-    </div>
-    <div class="content">
-        <h1>Testing Animation</h1>
-    </div>
-    <div class="content">
-        <h1>Testing Animation</h1>
-    </div>
-    <div class="content">
-        <h1>Testing Animation</h1>
-    </div>
+    <main class="main-content">
+        <div class="block-header"></div>
+        <div class="wrapper-content">
+            <section class="block-info tag">
+               <div class="text">
+                   <h1>Chatbot development</h1>
+                   <span>Smart Solutions, Digital Success!</span>
+                   <a href="" class="bth-pri">Price</a>
+               </div> 
+            </section>
+            <section class="block-info"></section>
+        </div>
+    </main>
     <script src="js/index.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.menu').click(function() {
-                if ($(this).hasClass('open')) {
-                    $(this).removeClass('open');
-                    $('.menu-panel').removeClass('open')
-                    $('.menu-panel').toggleClass('close')
-                    $('.tit').toggleClass('close')
-                    $(this).toggleClass('close');  
-                }
-                else {
-                    $(this).removeClass('close');
-                    $('.menu-panel').removeClass('close')
-                    $('.tit').removeClass('close')
-                    $('.menu-panel').toggleClass('open')
-                    $(this).toggleClass('open');
-                }
-                
-                $('.tit').toggleClass('open')
-            });
-        });
-    </script>
 </body>
 </html>
